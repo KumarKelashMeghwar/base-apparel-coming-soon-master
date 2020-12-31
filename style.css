@@ -1,0 +1,192 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+
+
+::placeholder{
+    color: hsl(0, 36%, 70%);
+    font-size: 10px;
+}
+
+#container{
+    width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container .section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-basis: 60%;
+    height: 350px;
+    background-image: url("bg-pattern-desktop.svg");
+    background-size: cover;
+}
+
+
+.section-1 h1 span{
+    color:  hsl(0, 36%, 70%);
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+
+
+h1{
+    margin-left: 65px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+
+.email-box{
+    margin-left: 65px;
+}
+.circle-container{
+    display: flex;
+    margin: -45px 0px 50px 68px;
+}
+
+h5{
+    color: hsl(0, 6%, 24%);
+    margin-top: -1.5px;
+    letter-spacing: 1.3px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 36%, 70%);
+    margin-right: 3px;
+}
+
+.section-1 p{
+    color:  hsl(0, 36%, 70%);
+    margin-left: 65px;
+    padding: 20px 10px 20px 0px;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+}
+
+.section-1 input{
+    width: 230px;
+    height: 25px;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 20px;
+    padding: 5px;
+    outline: none;
+    position: relative;
+}
+
+.section-1 .email-box{
+    display: flex;
+   justify-content: center;
+   align-self: flex-start;
+}
+
+.section-1 .email-box button{
+    position: absolute;
+    color: #fff;
+    width: 45px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 25px;
+    left: 42.3%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.section-2{
+    width: 260px;
+    height: 350px;
+    background-image: url("hero-desktop.jpg");
+    background-size: cover;
+}
+
+#container .section-2{
+    flex-basis: 40%;
+}
+
+
+
+@media screen and (max-width: 500px){
+
+    body{
+        background-color: rgb(248, 231, 234);
+    }
+
+    .circle-container{
+        position: absolute;
+        top: 11%;
+        left: -15%;
+    }
+
+    .section-2{
+        width: 380px;
+        height: 350px;
+        background-image: url("hero-mobile.jpg");
+    }
+    
+    #container{
+        flex-direction: column-reverse;
+        margin-top: 60px;
+    }
+
+    #container .section-1{
+        align-items: center;
+        justify-content: space-around;
+        flex-basis: 60%;
+        background-image: none;
+    }
+
+    h1{
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .section-1 p{
+        margin: 0;
+        padding: 0px 20px 0px 20px;
+        text-align:  center;
+    }
+
+    .section-1 .email-box{
+        margin: 0;
+        align-self: center;
+    }
+
+    .section-1 input{
+        width: 200px;
+    }
+
+    .section-1 .email-box button{
+        left: 67%;
+    }
+}
+
+
+
+
